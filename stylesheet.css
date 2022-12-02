@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+.h1flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    border:0 solid red;
+    height: 3rem;
+    background-color: bisque;
+    align-items: center;
+    flex-wrap: wrap;
+    width:19rem;
+    border-radius: 1rem;
+    box-shadow: -20px 20px 5px rgb(0,0,0,0.3);
+}
+
+
+.Contact{
+    display: flex;
+    justify-content: center;
+}

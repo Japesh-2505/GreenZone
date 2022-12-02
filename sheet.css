@@ -1,0 +1,36 @@
+.set{
+    margin: auto;
+    text-align:center;
+}
+table{
+     margin: auto;
+     border-spacing: 4px;
+     background-color:black;
+     border-spacing: 5px;
+     border-radius: 15px;
+     border-spacing: 15px;
+}
+.inp{
+    font-size: 19px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    height:35px;
+    width:480px;
+    border: 2px solid black;
+    border-radius: 17px;
+}
+button{
+    width:100px;
+    height:57px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(62, 62, 230);
+    border:2px solid rgb(200, 62, 85);
+    color:white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px white;
+    transition-delay: 0.01s;
+}
+

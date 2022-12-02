@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --gradient:linear-gradient(45deg , orange , #d65db1 , #ff6f91 , #ff9671 , #ffc75f , #f9f871)
+    /* #845ec2  */
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body{
+    /* background: url("pink.jpeg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    /* background: -webkit-linear-gradient(#a3866a , beige ,beige, #a3866a ); */
+    /* background: -webkit-linear-gradient(green , yellow, orange , red, black , yellow, orange , red); */
+    background: var(--gradient);
+    background-size: 400%;
+    animation: bg-animate 5s infinite alternate;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  @keyframes bg-animate{
+    0%{background-position: left;}
+    100%{background-position: right;}
+  }
+  /* .container{
+      width: 80%;
+      margin: 0 auto;
+  } */
+  
+  /* Header and Navbar CSS */
+  
+  .Logo {
+    margin-left: 1rem;
+  }
+  header {
+    /* background-color: gainsboro; */
+    padding: 0.5rem 0;
+    /* background-color:#a3866a; */
+    /* background: -webkit-linear-gradient( #c99461 ); */
+    /* color:green; */
+    /* position: sticky; */
+  }
+  header::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  h1 {
+    float: left;
+    cursor: pointer;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    display: inline-flex;
+    /* border: 2px solid black; */
+    position: absolute;
+    left:17rem;
+    width: 30rem;
+    justify-content: space-evenly;
+  }
+  .navbar li {
+    padding-top: 1rem;
+    position: relative;
+  }
+  .navbar a::before {
+    content: "";
+    display: block;
+    height: 0.3em;
+    background-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      rgb(6, 255, 131)
+    );
+    position: relative;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  .navbar a:hover::before {
+    width: 100%;
+  }
+  .navbar li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  /* Gradient Line CSS */
+  
+  .grad {
+    width: 100%;
+    height: 6px;
+    background-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      rgb(6, 255, 131)
+    );
+  }
+  /* .groot{
+      display: flex;
+       border: 2px solid black;
+      background-color: brown; 
+      height: 27.34em;
+      width: 23em;
+      float: right;
+      justify-content: center;
+      position: relative;
+      bottom: 0;
+  } */
+  
+  /* Groot CSs */
+  
+  #groot {
+    height: 38em;
+    width: 29em;
+    position: fixed;
+    right: 0em;
+    bottom: 0em;
+  }
+  
+  
+  /* Explore button CSS */
+  
+  .explore {
+    /* position:relative;
+      top:19em;
+      left:26em;
+      width:11em;
+      height:4em ;
+      background-image: linear-gradient(to right,rgb(61, 232, 90),rgb(229, 21, 244));
+      font-weight: bolder;
+      font-size: larger;
+      border-radius: 1em; */
+  
+    color: white;
+    /* background-image: linear-gradient(
+      to right,
+      rgb(61, 232, 90),
+      rgb(229, 21, 244)
+    ); */
+    background-color:black;
+    margin-top: 21em;
+    margin-left: 12em;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1.2em;
+    width: 12%;
+    border-radius: 1em;
+    border: 0ch;
+  }
+  
+  /* Text CSS */
+  
+  .text {
+    color: black;
+    margin-top: 5.5em;
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: "Ingrid Darling", cursive;
+    letter-spacing: 0.1345rem;
+    /* font-family: 'Hind', sans-serif; */
+  }
+  
+  
+  /* Jhalar CSs */
+  
+  .jhalar {
+    position: relative;
+    top: 0em;
+    left: -9em;
+  }
+  .floating {
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(15px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  
+  /* Icons CSS */
+  
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 200, "opsz" 48;
+  }
+  .favorite {
+    position: absolute;
+    top: 1em;
+    left: 56.9em;
+    cursor: pointer;
+  }
+  .cart {
+    position: absolute;
+    top: 1em;
+    left: 54.5em;
+    cursor: pointer;
+  }
+  .login {
+    position: absolute;
+    top: 1em;
+    left: 51.9em;
+    cursor: pointer;
+  }
+  
+  
+  /* More Button CSS */
+  
+  button:hover {
+    animation-name: move;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    z-index: 5;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.52em;
+    text-decoration: underline #00eeff;
+  }
+  @keyframes move {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0px, 2px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  #bg:hover::before
+  {
+    content: '';
+    padding: 0;
+    width: 8rem;
+    height:6rem;
+    background-color: #00eeff;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 48%, 0 99%);
+    z-index: -1;
+    top:0;
+    left:2;
+    overflow: hidden;
+  
+  }
+
+
+  /* Search Bar */
+
+
+.search
+{
+  /* border:2px solid black; */
+  display: inline-flex;
+  position:relative;
+  top:0.5rem;
+  left:40rem;
+  width:18rem;
+}
+
+#search-bar
+{
+   width:18rem;
+   height:2rem;
+   border-radius: 0.3rem;
+   border: 0 solid #c5c6d0;
+   box-shadow: 0px 0px 1px 1px #7f7d9c;
+   /* background: transparent; */
+}
+
+#search-bar:hover
+{
+  box-shadow: 0px 0px 18px 2px rgb(255, 0, 0);
+  font-weight: 600;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.search-icon
+{
+  position:relative;
+  left:-1.6rem;
+  top:0.3rem;
+  cursor: pointer;
+}
+input[type="search"]::-webkit-search-cancel-button
+{
+  -webkit-appearance:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* #bg:hover
+  {
+    animation: rotate 4s infinite ;
+  }
+  @keyframes rotate
+  {
+     0%{transform: rotate(0deg);}
+     25%{transform: rotate(50deg);}
+     50%{transform: rotate(-50deg);}
+     100%{transform: rotate(0deg);}
+  } */

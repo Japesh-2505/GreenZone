@@ -1,0 +1,35 @@
+.ribbon-wrap{
+   width:150px;
+   height:150px;
+   overflow:hidden;
+   position: absolute;
+   top:10px;
+   left:10px;
+}
+.ribbon-wrap::before,.ribbon-wrap::after{
+    content: '';
+    width: 10px;
+    height:10px;
+    background-color: bisque;
+    position: absolute;
+    z-index: -1;
+}
+.ribbon-wrap::before{
+    top:20px;
+    right:20px;
+}
+.ribbon-wrap::after{
+    bottom: 2px;
+    left: -2px;
+}
+.label{
+    width: 220px;
+    text-align: center;
+    font-size: 15px;
+    padding: 8px 0;
+    background-color: bisque;
+    position: absolute;
+    transform: rotate(-45deg);
+    right:-17%;
+    top:28%;
+}

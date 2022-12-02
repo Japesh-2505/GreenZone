@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: #f2efea;
+   font-family: Poppins;
+}
+.bg
+{
+  width:100%;
+  height: 100%;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+  position: absolute;
+  z-index: -1;
+  background-color: #66d7d1;
+}
+#img1{
+  position: absolute;
+  width: 35rem;
+  height: 35rem;
+  top: 6rem;
+  left: 6rem;
+  background-color: bisque;
+  border-radius: 2rem;
+  box-shadow: -10px 10px 15px black;
+}
+h1{
+  position: absolute;
+  top: 3rem;
+  right: 25rem;
+  font-size: 2rem;
+  word-spacing: 0.3rem;
+}
+#name{
+  position: absolute;
+  top:10rem;
+  right:18rem;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 1.3rem;
+  background-color: white;
+  text-indent: 52px;
+  font-size: 1.3rem;
+  padding: 0 0.4rem;
+}
+#email{
+  position: absolute;
+  top:16rem;
+  right:18rem;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 2rem; 
+  background-color: white;
+  text-indent: 52px;
+  font-size: 1.3rem;
+  padding: 0 0.4rem;
+}
+#text{
+  position: absolute;
+  top:22rem;
+  right:18rem;
+  width: 20rem;
+  height: 10rem;
+  border-radius: 2rem; 
+  background-color: white;
+  text-indent: 52px;
+  font-size: 1.3rem;
+  padding: 0 0.4rem;
+}
+#send{
+  position: absolute;
+  bottom:4.8rem;
+  right:18rem;
+  width: 17.4rem;
+  height: 2.5rem;
+  border-radius: 2rem; 
+  padding: 1.2rem 4rem;
+  outline: none;
+  border: none;
+  width: 21rem;
+  border-style: none;
+  cursor: pointer;
+  text-align: center;
+  color:white;
+  background-color: rgb(47, 72, 88);
+  font-weight: 600;
+  padding: 0 0.4rem;
+}
+#send:hover{
+  background-color: #66d7d1;
+  color: rgb(47, 72, 88);
+}
+#person{
+  height: 2rem;
+  position: absolute;
+  top:10.5rem;
+  right: 35rem;
+}
+#email_img{
+  height: 2rem;
+  position: absolute;
+  z-index: 10;
+  top:16.5rem;
+  right: 35rem;
+}
+#message{
+  height: 2rem;
+  position: absolute;
+  z-index: 10;
+  top:22.5rem;
+  right: 35rem;
+}

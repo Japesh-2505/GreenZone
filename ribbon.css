@@ -1,0 +1,74 @@
+.card{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+    background-color: rgb(171, 193, 212);
+    justify-content: center;
+    margin: 10rem;
+    position: relative;
+}
+.card img{
+    width: 80%;
+    transition: 0.5s ease-in-out;
+}
+.card i{
+    color: goldenrod;
+    margin: 10px 0;
+}
+.card button{
+    color: white;
+    background-color: rgba(15, 10, 29, 0.849);
+    border: none;
+    outline: none;
+    /* margin-top: 15px;
+    padding: 5px 20px;
+    width: ; */
+}
+.dis{
+    text-align: center;
+}
+.ribbon-wrap{
+    width:160px;
+    height:160px;
+    overflow:hidden;
+    position: absolute;
+    top:0px;
+    left:0px;
+    position: absolute;
+ }
+ .ribbon-wrap::before,.ribbon-wrap::after{
+     content: '';
+     /* width: 10px;
+     height:10px; */
+     background-color: bisque;
+     position: absolute;
+     z-index: -1;
+ }
+ /* .ribbon-wrap::before{
+    width:2rem;
+    height:2rem;
+     top:70px;
+     right:50px;
+     position: absolute;
+     z-index: 10;
+ }
+ .ribbon-wrap::after{
+    width:2rem;
+    height:2rem;
+     top:80px;
+     right:60px;
+     position: absolute;
+     z-index: 10;
+ } */
+ .label{
+     width: 220px;
+     text-align: center;
+     font-size: 15px;
+     padding: 8px 0;
+     background-color: bisque;
+     position: absolute;
+     transform: rotate(-45deg);
+     right:-1%;
+     top:18%;
+ }

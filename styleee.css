@@ -1,0 +1,26 @@
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    padding: 10px;
+}
+.UL{
+    background-color: aquamarine;
+    display: inline-block;
+    width: 46%;
+}
+.Courses{
+    background-color: darksalmon;
+    width: 50%;
+    height: 147px;
+    float: right;
+}
+div{
+    padding: 12px;
+    display: inline-block;
+}
+.hidden{
+    display: none;
+}

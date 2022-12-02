@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --gradient:linear-gradient(45deg , orange , #d65db1 , #ff6f91 , #ff9671 , #ffc75f , #f9f871)
+    /* #845ec2  */
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body{
+    /* background: url("pink.jpeg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    /* background: -webkit-linear-gradient(#a3866a , beige ,beige, #a3866a ); */
+    /* background: -webkit-linear-gradient(green , yellow, orange , red, black , yellow, orange , red); */
+    /* background: var(--gradient);
+    background-size: 400%;
+    animation: bg-animate 5s infinite alternate;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background-color: #f2efea;
+  }
+  
+  @keyframes bg-animate{
+    0%{background-position: left;}
+    100%{background-position: right;}
+  }
+  /* .container{
+      width: 80%;
+      margin: 0 auto;
+  } */
+  
+  /* Header and Navbar CSS */
+  
+  .Logo {
+    margin-left: 1rem;
+  }
+  header {
+    /* background-color: gainsboro; */
+    padding: 0.5rem 0;
+    /* background-color:#a3866a; */
+    /* background: -webkit-linear-gradient( #c99461 ); */
+    /* color:green; */
+    /* position: sticky; */
+  }
+  header::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  h1 {
+    float: left;
+    cursor: pointer;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    display: inline-flex;
+    /* border: 2px solid black; */
+    position: absolute;
+    left:17rem;
+    width: 30rem;
+    justify-content: space-evenly;
+  }
+  .navbar li {
+    padding-top: 1rem;
+    position: relative;
+    color: whitesmoke;
+  }
+  .navbar a::after {
+    content: "";
+    display: block;
+    height: 0.3em;
+    background-color: #2F4858;
+    position: relative;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  .navbar a:hover::after{
+    width: 100%;
+  }
+  .navbar li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  /* Gradient Line CSS */
+  
+  .grad {
+    width: 100%;
+    height: 6px;
+    background-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      rgb(6, 255, 131)
+    );
+  }
+  /* .groot{
+      display: flex;
+       border: 2px solid black;
+      background-color: brown; 
+      height: 27.34em;
+      width: 23em;
+      float: right;
+      justify-content: center;
+      position: relative;
+      bottom: 0;
+  } */
+  
+  /* Groot CSs */
+  
+  #groot {
+    height: 38em;
+    width: 29em;
+    position: fixed;
+    right: 0em;
+    bottom: 0em;
+  }
+  
+  
+  /* Explore button CSS */
+  
+  .explore {
+    /* position:relative;
+      top:19em;
+      left:26em;
+      width:11em;
+      height:4em ;
+      background-image: linear-gradient(to right,rgb(61, 232, 90),rgb(229, 21, 244));
+      font-weight: bolder;
+      font-size: larger;
+      border-radius: 1em; */
+  
+    color: white;
+    /* background-image: linear-gradient(
+      to right,
+      rgb(61, 232, 90),
+      rgb(229, 21, 244)
+    ); */
+    /* background-color: #104F55; */
+    background-color: #2F4858;
+    margin-top: 21em;
+    margin-left: 12em;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1.2em;
+    width: 12%;
+    border-radius: 1em;
+    border: 0ch;
+    cursor: pointer;
+
+  }
+  
+  /* Text CSS */
+  
+  .text {
+    color: black;
+    /* color: white; */
+    margin-top: 5.5em;
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: "Ingrid Darling", cursive;
+    letter-spacing: 0.1345rem;
+    /* font-family: 'Hind', sans-serif; */
+  }
+  
+  
+  /* Jhalar CSs */
+  
+  .jhalar {
+    position: relative;
+    top: 0em;
+    left: -9em;
+  }
+  .floating {
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(15px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  
+  /* Icons CSS */
+  
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 200, "opsz" 48;
+  }
+  .favorite {
+    position: absolute;
+    top: 1em;
+    left: 56.9em;
+    cursor: pointer;
+  }
+  .cart {
+    position: absolute;
+    top: 1em;
+    left: 54.5em;
+    cursor: pointer;
+  }
+  .login {
+    position: absolute;
+    top: 1em;
+    left: 51.9em;
+    cursor: pointer;
+  }
+  
+  
+  /* More Button CSS */
+  
+  button:hover {
+    animation-name: move;
+    animation-duration: 700ms;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+    animation-delay: 10ms;
+    z-index: 5;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.52em;
+    text-decoration: underline #00eeff;
+  }
+  @keyframes move {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0px, 2px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  .bg
+  {
+    width:100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+    position: absolute;
+    z-index: -1;
+    background-color: #66d7d1;
+  }
+
+  .exp-btn
+  {
+    background-color: #2F4858;
+    color: white;
+    text-decoration: none;
+    padding:1.7rem 3rem;
+    border-radius: 1rem;
+    position:absolute;
+    top:35rem;
+    left: 32em;
+    font-size: 1.3rem;
+  }
+
+  .exp-btn:hover
+  {
+    text-decoration: underline;
+  }
+
+  .float-header
+  {
+     /* outline: 2px solid black;  */
+     box-shadow: 0 3px 20px rgba(0,0,0,0.3);
+
+  }

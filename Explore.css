@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Kdam+Thmor+Pro&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+/*
+ background-color: rgb(2, 211, 248);
+   clip-path: polygon(0 0, 100% 0, 51% 52%, 0 100%, 0% 38%);
+   position: absolute;
+   z-index: -1;
+   */
+
+:root {
+  --gradient: linear-gradient(
+    45deg,
+    orange,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #ff557a
+  );
+  /* #845ec2  */
+}
+
+body {
+  /* background: var(--gradient);
+  background-size: 400%;
+  animation: bg-animate 5s infinite alternate; */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed; */
+  height: 100%;
+  margin: 0;
+  background-color: #f2efea;
+}
+
+/* @keyframes bg-animate {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+} */
+
+/* Header and Navabr CSS */
+
+.Logo {
+  margin-left: 1rem;
+}
+
+header {
+  padding: 0.7rem 0;
+}
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1 {
+  float: left;
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  position: absolute;
+  left: 17rem;
+  width: 30rem;
+  justify-content: space-evenly;
+  /* border: 2px solid black; */
+}
+.navbar li {
+  padding-top: 1rem;
+  position: relative;
+}
+.navbar a:hover
+{
+  background-color: bisque;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+.navbar li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family:'Baloo 2',sans-serif;
+  transition: ease-in-out 250ms;
+}
+
+/* Gradient Line CSS */
+
+/* .grad {
+  width: 100%;
+  height: 6px;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    rgb(6, 255, 131)
+  );
+} */
+
+/* Icon Css */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 200, "opsz" 48;
+}
+.favorite {
+  position: absolute;
+  top: 1.2em;
+  left: 56.9em;
+  cursor: pointer;
+}
+.cart {
+  position: absolute;
+  top: 1.2em;
+  left: 54.5em;
+  cursor: pointer;
+}
+.login {
+  position: absolute;
+  top: 1.2em;
+  left: 51.9em;
+  cursor: pointer;
+}
+
+/* Buttons Css */
+
+.buttons {
+  display: flex;
+  width: 100%;
+  height: 7rem;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 14rem;
+  flex-wrap: wrap;
+
+}
+
+/* button:hover {
+  animation-name: move;
+  animation-duration: 700ms;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-out;
+  z-index: 5;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1.52em;
+  text-decoration: underline #00eeff;
+} */
+/* @keyframes move {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0px, 2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+} */
+.design1 {
+  color: white;
+  background-color: #2F4858;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.1em;
+  width: 13%;
+  height: 5rem;
+  border-radius: 1em;
+  border: 0ch;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in-out 250ms;
+  /* margin-top: 7.4em;
+  margin-left: 5%; */
+  /* display: inline-block; */
+  /* position: absolute; */
+}
+
+.design2 {
+  color: white;
+  background-color: #2F4858;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.1em;
+  width: 13%;
+  height: 5rem;
+  border-radius: 1em;
+  border: 0ch;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:ease-in-out 250ms;
+  /* margin-top: 7.4em;
+  margin-left: 31.5%; */
+  /* display: inline-block; */
+  /* position: absolute; */
+}
+.design3 {
+  color: white;
+  background-color: #2F4858;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.1em;
+  width: 13%;
+  height: 5rem;
+  border-radius: 1em;
+  border: 0ch;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in-out 250ms;
+  /* margin-top: 7.4em;
+  margin-left: 58%; */
+  /* display: inline-block; */
+  /* position: absolute; */
+}
+.design4 {
+  color: white;
+  background-color: #2F4858;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.1em;
+  width: 13%;
+  height: 5rem;
+  border-radius: 1em;
+  border: 0ch;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:ease-in-out 250ms;
+  /* margin-top: 7.4em;
+  margin-left: 83%; */
+  /* display: inline-block; */
+  /* position: absolute; */
+}
+
+.design1:hover,.design2:hover,.design3:hover,.design4:hover
+{
+  text-decoration: underline;
+  background-color: #192f3d;
+}
+
+/* Images CSS */
+
+.contain {
+  display: flex;
+  width: 100%;
+  height: 10.3rem;
+  justify-content: space-between;
+  /* border:2px solid black; */
+}
+
+#plants {
+  position: relative;
+  width: 8rem;
+  height: 10rem;
+  left: 11rem;
+}
+#seeds {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  left: 4rem;
+  top: 1.9rem;
+}
+#pots {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  top: 0rem;
+  left: -3.5rem;
+  top: 1.9rem;
+}
+
+#fertilizer {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  top: 0rem;
+  left: -11rem;
+  top: 1.9rem;
+}
+
+/* Three Div CSS */
+
+.three-div {
+  display: flex;
+  position: absolute;
+  top: 26rem;
+  width: 100%;
+  height: 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+.one {
+
+  border: 2px solid black;
+  background-color: #2F4858;
+  width: 25rem;
+  height: 15rem;
+  text-align: center;
+  border-radius: 1.4rem;
+  
+  /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  /* background-color: #00eeff; */
+  /* margin-right:4rem;
+    margin-left:2rem; */
+  /* background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgb(255, 143, 6); */
+
+}
+.two {
+  border: 2px solid black;
+  background-color: #2F4858;
+  width: 25rem;
+  height: 15rem;
+  text-align: center;
+  border-radius: 1.4rem;
+  /* margin-right:4rem;
+    margin-left:2rem; */
+}
+.three {
+  border: 2px solid black;
+  background-color: #2F4858;
+  width: 25rem;
+  height: 15rem;
+  text-align: center;
+  border-radius: 1.4rem;
+  /* margin-left:3rem;
+    margin-right:0; */
+}
+
+.inside-one {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 4rem;
+  left: 10rem;
+  width: 14.5rem;
+  line-height: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  /* border:2px solid black; */
+}
+.inside-two {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 4rem;
+  left: 10rem;
+  width: 14.5rem;
+  line-height: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+
+}
+.inside-three {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 4rem;
+  left: 10.5rem;
+  width: 14.5rem;
+  line-height: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+
+}
+
+/* Image in Three DIV CSS */
+
+#flower {
+  position: absolute;
+  top: 29rem;
+  left: 6rem;
+  outline: 1px solid gold;
+  border-radius: 50%;
+}
+#flori {
+  position: absolute;
+  top: 29rem;
+  left: 36rem;
+  outline: 1px solid gold;
+  border-radius: 50%;
+}
+#garden {
+  position: absolute;
+  top: 29rem;
+  left: 66rem;
+  outline: 1px solid gold;
+  border-radius: 50%;
+}
+
+/* footer CSS */
+
+footer {
+  background-color: rgba(15, 10, 29, 0.849);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  position: absolute;
+  top: 50rem;
+  width: 100%;
+  height: 8rem;
+  flex: 1;
+}
+footer div {
+  flex-basis: 25%;
+}
+footer h1 {
+  letter-spacing: 0.5rem;
+}
+footer p {
+  font-size: 1rem;
+  text-align: center;
+}
+footer i {
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+
+/* Links For Flori and Mood  */
+
+
+.style_a
+{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Search Bar css */
+
+
+.search
+{
+  /* border:2px solid black; */
+  display: inline-flex;
+  position:relative;
+  top:0.5rem;
+  left:40rem;
+  width:18rem;
+}
+
+#search-bar
+{
+   width:18rem;
+   height:2rem;
+   border-radius: 0.3rem;
+   border: 0 solid #c5c6d0;
+   box-shadow: 0px 0px 1px 1px #7f7d9c;
+   padding: 0.2rem;
+   /* background: transparent; */
+}
+
+#search-bar:hover
+{
+  box-shadow: 0px 0px 18px goldenrod;
+  font-weight: 600;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.search-icon
+{
+  position:relative;
+  left:-1.6rem;
+  top:0.3rem;
+  cursor: pointer;
+}
+input[type="search"]::-webkit-search-cancel-button
+{
+  -webkit-appearance:none;
+}
+
+
+/* Cliping css */
+
+.bg
+{
+  width:100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 54%, 0 55%);
+  position: absolute;
+  z-index: -1;
+  background-color: #66d7d1;
+}
+
+/* Header floating */
+
+.float-header
+  {
+     /* outline: 2px solid black;  */
+     box-shadow: 0 3px 20px rgba(0,0,0,0.3);
+
+  }
+
+.links:hover
+{
+  text-decoration: underline;
+}
+
+/* .one::after
+{
+   content: '';
+   position:absolute;
+   width:25rem;
+   height: 7rem;
+   background-color: #ffc75f;
+   top:1.3rem;
+   left:5rem;
+   border-radius: 1.4rem;
+   z-index:-1;
+} */
+
+
+.anchor
+{
+  text-decoration: none;
+  color: black;
+}
+
+.Zone-span
+{
+  text-decoration: none;
+  color:black;
+}
